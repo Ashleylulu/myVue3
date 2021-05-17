@@ -9,8 +9,7 @@
         name: "BarCharts",
         data(){
             return {
-                cronPopover:true,
-                res:''
+                
             }
         },
         methods:{

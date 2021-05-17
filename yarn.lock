@@ -3053,7 +3053,7 @@ electron-to-chromium@^1.3.723:
   resolved "https://registry.nlark.com/electron-to-chromium/download/electron-to-chromium-1.3.727.tgz#857e310ca00f0b75da4e1db6ff0e073cc4a91ddf"
   integrity sha1-hX4xDKAPC3XaTh22/w4HPMSpHd8=
 
-element-ui@^2.0.7, element-ui@^2.15.1:
+element-ui@^2.0.7:
   version "2.15.1"
   resolved "https://registry.yarnpkg.com/element-ui/-/element-ui-2.15.1.tgz#ada00aa6e32c02774a2e77563dd84668f813cdff"
   integrity sha512-TqlScAKGH97XndSScUDeEHIzL1x7yg7DvQdKPEOUdiDcyIz3y3FJJBlpHYaJT96FOn1xpIcUZb+I2FJeU9EcrQ==

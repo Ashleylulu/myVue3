@@ -5,7 +5,6 @@
 </template>
 <script>
 import {ref} from 'vue' // 实现带ref的响应式变量
-
 export default {
     props:{
         user:{
