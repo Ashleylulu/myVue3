@@ -79,17 +79,23 @@
                <input type="number"  v-model.number="intNum">
            </div>
        </div>
+       <!-- 定时任务 -->
        <div class="cron">
            <el-popover v-model="cronPopover">
                <el-input slot="reference" @click="cronPopover=true" v-model="cron" placeholder="请输入定时策略" style="width: 40% ;margin-left: -50%"></el-input>
                <cron @change="changeCron" @close="cronPopover=false" i18n="en"></cron>
            </el-popover>
        </div>
+       <!-- 新特性 setup -->
+       <div>
+           <comps :user="fullName"></comps>
+       </div>
    </div>
 </template>
 
 <script>
     import {cron} from 'vue-cron'
+    import comps from '../components/Comps'
     export default {
         name: "home",
         components: { cron },
