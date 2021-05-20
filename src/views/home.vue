@@ -65,7 +65,7 @@
         },
         mixins:[homeMixin],
         created(){
-            console.log(this.$data)
+            
         }
     }
 </script>
