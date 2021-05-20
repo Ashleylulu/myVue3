@@ -1,37 +1,33 @@
 <template>
     <div>
-        <button>点击按钮</button>
+        <injection></injection>
+        <div>
+            <ul>
+                <li v-for="item in book">{{item}}</li>
+            </ul>
+        </div>
     </div>
 </template>
 <script>
-import {ref} from 'vue' // 实现带ref的响应式变量
+import {ref,toRefs,computed,watch,onMounted , reactive , inject, h} from 'vue' // 实现带ref的响应式变量
+import injection from '../components/Injection'
 export default {
-    props:{
-        user:{
-            type:String,
-            required:true
-        }
-    },
-    setup(props){
-        console.log(props)
-        let res = ref([]);
-        const getUserRes = () => {
-            console.log('1')
+    components:{injection},
+    setup(){
+        let book = inject('book');
+        let state = reactive({count:0})
+        const increat = () => {
+            state.count++
+            console.log(state)
         }
         return {
-            res,
-            getUserRes
-        } //这里返回的任何内容都可以用于组件的其余部分
-    },
-    //组件的"其余部分"
-    data(){
-        return {
-
+            book
         }
     },
-    mounted () {
-        this.getUserRes()
+    render(){
+        return h('div')
     }
+
 }
 </script>
 <style scoped>
